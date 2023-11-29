@@ -1,69 +1,65 @@
-Welcome to the Credit Card Churn Prediction Repository! This project is a comprehensive exploration of predicting credit card churn using advanced machine learning techniques. Dive into the world of data-driven insights and predictive analytics to anticipate and prevent customer churn in the credit card industry.
+## Overview:
 
-📊 Key Features:
+  Welcome to the Credit Card Churn Prediction Repository! This project is a comprehensive exploration of predicting credit card churn using advanced machine learning techniques. Dive into the world of data-driven insights and predictive analytics to anticipate and prevent customer churn in the credit card industry. This repository serves as a valuable resource for understanding the application of machine learning in the finance sector, emphasizing the importance of proactive customer relationship management.
 
-Machine Learning Models: Implementation of various supervised learning algorithms, including Naive Bayes, Decision Trees, Support Vector Machines, and k-Nearest Neighbors, to evaluate and predict customer churn.
+## 📊 Key Features:
+
+Data Cleaning/Preprocessing: Conducted checks for missing and duplicate values, removed irrelevant columns/rows, performed label encoding on binary categorical features, and generated dummy variables for non-binary categorical features, ensuring optimal data quality for predictive modeling.
+
+Machine Learning Models: Implementation of various supervised learning algorithms, including Naive Bayes, Decision Trees, Support Vector Machines, and K-Nearest Neighbors, to evaluate and predict customer churn.
+
 Evaluation Metrics: Robust assessment metrics such as accuracy, precision, and recall to gauge the performance of each model and identify the most effective approach.
+
 Data Visualization: Engaging visualizations to illustrate key patterns and factors influencing credit card churn, aiding in a deeper understanding of the predictive models.
-💡 Objective:
-Our primary goal is to leverage machine learning to forecast credit card churn, providing financial institutions and businesses with actionable insights to enhance customer retention strategies. Explore, experiment, and contribute to the evolving field of predictive analytics.
 
 
-🛠️ Technologies Used:
+## 💡 Objective:
 
-Python: Leveraging the power of Pandas, NumPy, and Scikit-Learn. Jupyter Notebooks: Transparent and interactive documentation of the entire workflow.
+  Our primary objective is to leverage supervised learning models for credit card churn prediction, determining whether a credit card customer is likely to remain with the service or opt to churn. This prediction will be based on input features, aiming to develop accurate and reliable tools for proactive management of customer retention. 
 
-📈 Results:
 
-Naive Bayes Classifier:
 
-The findings reveal that the Multinomial Naive Bayes model achieved an overall accuracy of 84%, with a precision rate of 86% for correctly predicting stroke cases. Notably, the classifier demonstrated a high recall of 97%, indicating its effectiveness in correctly identifying the majority of stroke patients when they are present.
+## 🛠️ Technologies Used:
 
-KNN Classifier:
+Python: Leveraging the power of Pandas, NumPy, and Scikit-Learn. 
+Jupyter Notebooks: Transparent and interactive documentation of the entire workflow.
 
-The findings indicate that the K-Nearest Neighbors (KNN) model achieved an impressive overall accuracy of 95%. Notably, the precision rate for predicting stroke cases is 100%, signifying that when the model predicts a patient to have a stroke, it is correct 100% of the time. Furthermore, the recall is 95%, demonstrating the model's ability to correctly identify 95% of all actual stroke patients, making it a robust classifier for stroke prediction.
+
+
+## 📈 Results:
 
 Decision Tree:
 
-The findings reveal that the Decision Tree model achieved an accuracy of 91%. Notably, the precision for predicting stroke cases is 95%, indicating that when the model predicts a patient to have a stroke, it is correct 95% of the time. Additionally, the recall is 95%, demonstrating the model's effectiveness in correctly identifying 95% of all actual stroke patients. Overall, these results signify the robust performance of the Decision Tree classifier in stroke prediction.
+The Decision Tree model exhibits a commendable performance with an accuracy of 94%. Notably, when predicting customer churn, the precision is 80%, indicating that it is correct 80% of the time. Additionally, the classifier demonstrates a solid recall rate of 83%, correctly identifying 83% of all customers who actually churn. Overall, these findings underscore the effectiveness of the Decision Tree classifier in predicting and identifying churn customers.
 
-Random Forest:
-
-The findings indicate that the Random Forest model achieved a high accuracy of 95%. Specifically, the precision for predicting stroke cases is 100%, highlighting that when the model predicts a patient to have a stroke, it is correct 100% of the time. Moreover, the recall is 95%, demonstrating the model's efficacy in correctly identifying 95% of all actual stroke patients. These results underscore the robust and accurate performance of the Random Forest classifier in stroke prediction.
-
-Overall:
-
-K-Nearest Neighbors and Random Forest demonstrated strong performance, achieving an accuracy score of 95%. The Decision Tree followed closely with an accuracy of 91%, while Naïve Bayes yielded the lowest accuracy among the four classifiers, registering at 84%. The analysis reveals that both K-Nearest Neighbors (K-NN) and Random Forest achieved high accuracy scores, with Random Forest emerging as the preferable choice due to its faster computation time and superior handling of overfitting. However, if minimizing computation time is crucial, Naïve Bayes and the Decision Tree classifier present more efficient alternatives. Further investigation could delve into the reasons why a significant number of patients who experienced a stroke did not have heart disease, questioning the reliability of heart disease as an indicator for strokes. The collected data holds valuable insights for identifying critical features such as years of smoking and the presence of hypertension when dealing with patients at risk of stroke. This information can benefit hospitals and drug companies in developing targeted preventive measures based on gender, age, BMI, and other factors highlighted in the exploratory data analysis (EDA) findings.
-
-🔗 Connect with Me:
-
-LinkedIn: [Your LinkedIn Profile] Twitter: [@YourTwitterHandle] Portfolio: [Your Portfolio Website]
-
-🌐 Explore the Project: Feel free to explore the code, datasets, and documentation. Contributions and feedback are highly appreciated!
+Naive Bayes Classsifier:
 
 
+The Gaussian Naïve Bayes model achieves an accuracy of 90%. When predicting customer churn, the precision is 61%, indicating correctness 61% of the time. Moreover, the classifier demonstrates a recall of 72%, correctly identifying 72% of all customers who actually churn. These findings highlight the overall effectiveness of the Gaussian Naïve Bayes classifier in predicting and identifying churn customers.
 
 
+KNN Classifier:
+
+The K-Nearest Neighbors (KNN) model achieves an accuracy of 89%. When predicting customer churn, the precision is 56%, indicating correctness 56% of the time. Additionally, the classifier demonstrates a recall of 71%, correctly identifying 71% of all customers who actually churn. These findings reflect the overall performance of the KNN classifier in predicting and identifying churn customers.
+
+Support Vector Machine (SVM) Classifier:
+
+The Support Vector Machine (SVM) model shows an accuracy of 84%. However, it is essential to note that both precision and recall are 0%, indicating that when predicting customer churn, the model does not correctly identify any instances. These findings suggest limitations in the performance of the SVM classifier for the task of predicting and identifying churn customers.
 
 
+## Conclusions:
 
+The Decision Tree outperformed the other classifiers, boasting the highest accuracy at 94%. Gaussian Naïve Bayes closely followed with an accuracy score of 90%, and K-Nearest Neighbors (KNN) achieved 89%. On the other hand, the Support Vector Machine (SVM) had the least accuracy among the four classifiers, recording an accuracy of 84%. The dataset underwent thorough cleaning and preparation to ensure its readiness for model evaluation. Four supervised learning classifiers were applied to the dataset, yielding accuracy, precision, and recall scores for each. Due to the dataset comprising only 16.1% of customers who churned, training the model for churn prediction posed challenges. Consequently, this led to lower precision and recall scores for churn customers. While Decision Tree and Gaussian Naïve Bayes achieved higher accuracy scores, SVM, despite its faster computation time compared to KNN, exhibited unsatisfactory precision and recall scores for predicting churn customers. For scenarios where computation time is crucial, Naïve Bayes followed by the Decision Tree classifier emerge as superior options due to their efficiency compared to SVM and KNN. To enhance Precision and Recall scores in identifying churn customers, one approach is to unsample the data specifically for churn instances. The collected data provides valuable insights for individuals in the banking industry, shedding light on crucial features such as income, education level, credit limit, etc., when addressing customer attrition. Banking managers can leverage the explored data to devise strategies aimed at preventing customers from leaving credit card services. Exploratory Data Analysis (EDA) findings enable them to draw conclusions about the demographics, including gender, age, marital status, etc., and tailor preventative measures and improved services accordingly.
 
 
 
+## 🔗 Connect with Me:
+
+LinkedIn: [Your LinkedIn Profile] 
 
 
+## 🌐 Explore the Project: 
 
+Delve into the code, datasets, and visualizations. Contributions and feedback are warmly welcomed!
 
-
-
-
-
-## Credit Card Churn Prediction:
-
-  Objective: To employ supervised learning models in Python to assess and predict the likelihood of a credit card customer either staying or churning while also comparing these models to determine the best performance based in metrics such as accuracy, precision, and recall.
-  
-  Skills Demonstrated: 
-      Data Cleaning/Preprocessing: Checks for missing and duplicate values, removal of irrelevant columns/rowa, label encoding of binary categorical features, and the creation of dummy variables for non-binary categorical features to ensure optimal quality for predictive modeling.     
-      EDA: Generating correlation graphs/maps, pie charts, histograms, and plots to explore and visualize the relationships between the features in the dataset.
-      Machine learning: Implemented Naive Bayes, Decision Tree, SVM, and KNN algorithms to carry out predictions. Overall model accurscy, precison, and recall metrics were calculated to evaluate the effectiveness of each algorithm in prredicting whether a credit card customer would churn.
-      Data Visualization: Utilized a confusion matrix for all algorithms used in order to provide a detailed breakdown of true positives, true negatives, false positives, and false negatives. These offered valuable insight into each model's performsnce and aided in the assessment of predictive accuracy.
+Predict the future, empower your decisions! 💳✨
