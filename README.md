@@ -22,8 +22,8 @@ Data Visualization: Engaging visualizations to illustrate key patterns and facto
 ## 🛠️ Technologies Used:
 
 Python: Leveraging the power of Pandas, NumPy, and Scikit-Learn. 
-Jupyter Notebooks: Transparent and interactive documentation of the entire workflow.
 
+Jupyter Notebooks: Transparent and interactive documentation of the entire workflow.
 
 
 ## 📈 Results:
