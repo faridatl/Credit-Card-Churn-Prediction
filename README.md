@@ -55,11 +55,12 @@ The Decision Tree outperformed the other classifiers, boasting the highest accur
 
 ## 🔗 Connect with Me:
 
-LinkedIn: [Your LinkedIn Profile] 
+LinkedIn: (https://www.linkedin.com/in/faridatlawal/)
 
 
 ## 🌐 Explore the Project: 
 
 Delve into the code, datasets, and visualizations. Contributions and feedback are warmly welcomed!
 
-Predict the future, empower your decisions! 💳✨
+
+##### Predict the future, empower your decisions! 💳✨
